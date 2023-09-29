@@ -14,28 +14,47 @@ font-family:var(--font-grl);
 }
 /*header*/
 
-nav{
-  height: 20%;
-  background-image: url(https://c7.alamy.com/compes/fd566w/placa-base-de-pc-fd566w.jpg);
-  bottom: 0%;
-  color:var(--fontcolor);
+ul{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(146, 146, 146);
+  overflow: hidden;
+  list-style-type: none;/* saca todos los iconos del inicio*/
 }
-nav>h1{
-  background-color: var(--backgroundcolor);
-  color:var(--fontcolor);
-  border-color: blue;
+li{
+
+  float: left;
+  background-color: rgb(146, 146, 146);
+  border-right: 1px solid rgb(11, 9, 9);
 }
-a{
+
+li:first-child{
+  border-left:  1px solid red;
+}
+
+li a{
   text-decoration: none;
-  background-color: var(--backgroundcolor);
-  color:var(--fontcolor);
+  padding: 10px 25px;
+  color:white;
+  text-align: center;
+  display: block;
+
   
 }
-header{
-  height: 30%;
-}
-/*Footer*/
+li a:hover{
+  color:rgb(0, 0, 0);
+ 
+  background-color: rgb(252, 252, 213);
 
+}
+.active{
+  color:rgb(0, 0, 0);
+ 
+  background-color: rgb(251, 251, 133);
+}
+
+
+/*footer*/
 footer{
   background-color: gray;
     color:var(--fontcolor);
@@ -51,6 +70,9 @@ body{
 img{
   border: 1px solid red
 }
+
+
+
 
 /*Faq*/
 .Pregunta{
@@ -80,17 +102,12 @@ img{
     outline: none;
   }
 
-.active, .accordion:hover {
+.accordion:hover {
     background-color: #ccc;
   }
   
 
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-  }
+
 
 
 
